@@ -1,1 +1,76 @@
 /* Other rules */
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+header {
+  height: 80px;
+  border-bottom: 1px solid #e9ebeb;
+}
+
+.headerDiv {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+}
+
+header img {
+  width: 160px;
+}
+
+.restaurantInfo {
+  display: flex;
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+  flex-direction: row;
+}
+
+.restaurantInfo p {
+  color: #868a8a;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.restaurantInfo img {
+  width: 350px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  background: #f3f5f5;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+  flex-direction: row;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.meals {
+  display: flex;
+}
+
+.meal {
+  display: flex;
+}
+
+.rightMeal img {
+  height: 130px;
+  width: 130px;
+}
