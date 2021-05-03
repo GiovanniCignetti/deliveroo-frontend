@@ -45,44 +45,45 @@ function App() {
         </div>
         <img src={data.restaurant.picture} alt="" />
       </div>
-
-      <div className="container">
-        <div className="categories">
-          {data.categories &&
-            data.categories.map((category, index) => {
-              return (
-                category.meals.length > 0 && (
-                  <>
-                    <h2>{category.name}</h2>
-                    <div className="meals">
-                      {category.meals.map((meal, index) => {
-                        return (
-                          <>
-                            <div className="meal" key={meal.id}>
-                              <div className="leftMeal">
-                                <h3>{meal.title}</h3>
-                                <p>{meal.description}</p>
-                                <div>
-                                  <span>{meal.price}</span>
-                                  {meal.popular && <span>"Popular"</span>}
+      <div className="content">
+        <div className="container">
+          <div className="categories">
+            {data.categories &&
+              data.categories.map((category, index) => {
+                return (
+                  category.meals.length > 0 && (
+                    <>
+                      <h2>{category.name}</h2>
+                      <div className="meals">
+                        {category.meals.map((meal, index) => {
+                          return (
+                            <>
+                              <div className="meal" key={meal.id}>
+                                <div className="leftMeal">
+                                  <h3>{meal.title}</h3>
+                                  <p>{meal.description}</p>
+                                  <div>
+                                    <span>{meal.price}</span>
+                                    {meal.popular && <span>"Popular"</span>}
+                                  </div>
+                                </div>
+                                <div className="rightMeal">
+                                  {meal.picture && (
+                                    <img src={meal.picture} alt="mealPicture" />
+                                  )}
                                 </div>
                               </div>
-                              <div className="rightMeal">
-                                {meal.picture && (
-                                  <img src={meal.picture} alt="mealPicture" />
-                                )}
-                              </div>
-                            </div>
-                          </>
-                        );
-                      })}
-                    </div>
-                  </>
-                )
-              );
-            })}
+                            </>
+                          );
+                        })}
+                      </div>
+                    </>
+                  )
+                );
+              })}
+          </div>
+          {/* <div>PANIER</div> */}
         </div>
-        {/* <div>PANIER</div> */}
       </div>
     </>
   );
