@@ -33,52 +33,20 @@ h3 {
   font-weight: bold;
 }
 
-header {
-  height: 80px;
-  border-bottom: 1px solid #e9ebeb;
-}
-
-.headerDiv {
-  margin: 0 auto;
-  width: 96vw;
-  max-width: 1200px;
-}
-
-header img {
-  width: 160px;
-}
-
-.restaurantInfo {
-  display: flex;
-  margin: 20px auto;
-  width: 96vw;
-  max-width: 1200px;
-  flex-direction: row;
-}
-
-.restaurantInfo p {
-  color: #868a8a;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.restaurantInfo img {
-  width: 350px;
-  border-radius: 5px;
-  /* overflow: hidden; */
-  background: #f3f5f5;
-  object-fit: cover;
-}
-
-.content {
+.body {
   background-color: #f3f5f5;
 }
 
-.container {
+.content {
   display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
   margin: 0 auto;
   width: 96vw;
-  max-width: 1200px;
+}
+
+.contentMeal {
+  display: flex;
   flex-direction: row;
   /* border: solid 3px red; */
 }
@@ -137,4 +105,63 @@ header img {
   object-fit: cover;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.cart {
+  width: 350px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-radius: 4px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 30px 0;
+}
+
+.cartButton {
+  display: block;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 1rem;
+  background: #00cdbd;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.cartDisabled {
+  cursor: not-allowed;
+  background: #bac3c3;
+  color: #8b9a9b;
+}
+
+.cartEmpty {
+  color: #868a8a;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cartLine {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+
+.cartResults {
+  margin: 0 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #d1d7d7;
+}
+
+.cartTotal {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.3rem 0;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
 }

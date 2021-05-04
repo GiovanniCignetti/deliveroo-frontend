@@ -1,0 +1,14 @@
+header {
+  height: 80px;
+  border-bottom: 1px solid #e9ebeb;
+}
+
+.headerDiv {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+}
+
+header img {
+  width: 160px;
+}

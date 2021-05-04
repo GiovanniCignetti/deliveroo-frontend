@@ -1,0 +1,20 @@
+.restaurantInfo {
+  display: flex;
+  margin: 20px auto;
+  width: 96vw;
+  max-width: 1200px;
+  flex-direction: row;
+}
+
+.restaurantInfo p {
+  color: #868a8a;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.restaurantInfo img {
+  width: 350px;
+  border-radius: 5px;
+  background: #f3f5f5;
+  object-fit: cover;
+}
